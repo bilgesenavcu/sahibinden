@@ -1,0 +1,289 @@
+.register-container {
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding: 48px;
+  font-size: 15px;
+  color: #505050;
+  font-weight: 500;
+}
+
+.register-container img {
+  margin-top: -100px;
+  max-width: 120px;
+}
+
+.page-container {
+  background-color: #f8f8f8;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: #3f475f;
+  margin-top: -24px;
+  height: 58px;
+  width: 1536px;
+  margin-left: -120px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.navbar-logo {
+  width: 160px;
+  height: auto;
+  margin-right: 25px;
+  margin-left: 190px;
+}
+
+.search-input {
+  width: 264px;
+  height: 36px;
+  background-color: #f7f7f7;
+  border-radius: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.search-input:not(:focus):valid {
+  height: 36px;
+  width: 264px;
+  border: none;
+  background-color: #2f3546;
+  font-size: 12px;
+}
+
+.search-input:focus::placeholder {
+  color: #383838;
+  font-size: 12px;
+}
+
+.search-input:not(:focus)::placeholder {
+  color: #d4d2d2;
+}
+
+
+.nav-link {
+  margin-left: 245px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 12px;
+  margin-right: -220px;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.logout-dropdown {
+  color: white !important;
+  background-color: transparent;
+  border: none;
+  text-decoration: none !important;
+}
+
+.logout-dropdown:hover {
+  text-decoration: underline !important; /* Hover durumunda alt çizgi ekler */
+}
+
+.ilanlar-listesi {
+  display: flex;
+  flex-wrap: wrap; /* Satırlara yayılmasını sağlıyor */
+  margin-left: 230px; /* Sol tarafta boşluk bırakmak için */
+  margin-top: 5px;
+}
+
+.ilan-item {
+  text-align: center;
+  flex-basis: calc(100% / 7 - 19px); /* 100% / 7 öğe, yatayda 16px mesafe ekleyerek her öğenin genişliğini ayarlamak için */
+  height: 125.6px;
+}
+
+.ilan-title {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.ilan-image {
+  width: 122px;
+  height: 108.6px;
+  margin-top: 5px;
+  padding: 5px 16px 7px 0;
+}
+
+.vitrin-title {
+  font-size: 13px;
+  font-weight: normal;
+  color: #1b1b1b;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 7px;
+  margin-top: 65px;
+  margin-left: 225px;
+
+}
+
+.ilan-title-link {
+  color: inherit;/* Varsayılan metin rengini kullanır */
+  text-decoration: none; /* Altı çiziliği kaldır */
+  font-size: 12px;
+}
+
+.ilan-title-link:hover {
+  text-decoration: underline; /* Üzerine gelince altı çizilir */
+}
+
+.detail-container {
+  max-width: 800px;
+  margin: 30px 180px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.detail-description {
+  margin-bottom: 10px; /* Açıklama ile resim arasında boşluk */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail-content {
+  display: flex;/* Resim ve bilgileri yan yana hizalamak için flex  */
+  gap: 50px;/* Resim ve bilgiler arasında boşluk */
+}
+
+.detail-image {
+  width: 480px;
+  height: 360px;
+  object-fit: cover; /* Resim boyutlarını sabit tutarken, içeriği kırpmak */
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column; /* Bilgileri dikey sıralamak için */
+  justify-content: space-around; /* Bilgiler arasında eşit boşluk bırakır */
+  font-size: 12px;
+  margin-bottom: 120px;
+
+}
+
+.sidebar {
+  width: 200px;
+  margin-top: -500px;
+}
+
+.sidebar .category {
+  font-weight: bold;
+  font-size: 13px;
+  color: #003399;
+  margin-bottom: 10px;
+  display: flex; /* İçeriğin düzgün hizalanabilmesi için flex  */
+  align-items: center; /* Görselleri ve metni hizalamak için */
+}
+
+.category-link {
+  color: #003399;
+  text-decoration: none;/* Başlangıçta linklerin altı çizili olmasın */
+  margin-left: 5px;/* İkon ile metin arasındaki boşluk */
+}
+
+.category-link:hover {
+  text-decoration: underline; /* Üzerine gelince altı çizilecek */
+}
+
+.sidebar .subcategory {
+  font-size: 13px;
+  margin-bottom: 15px;
+  margin-left: 28px;
+}
+
+.sidebar .subcategory a {
+  color: #003399;
+  text-decoration: none; /* Alt kategorilerin de başlangıçta altı çizili olmasın diye */
+}
+
+.subcategory a:hover {
+  text-decoration: underline; /* Üzerine gelince altı çizilecek */
+}
+
+.divider {
+  margin: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.category:hover .category-link {
+  text-decoration: underline; /* Kategori başlığının altı çizili olacak */
+}
+
+.category-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Sayfa geneli */
+.emlak-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.vitrin-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b1b1b;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: -100px;
+  margin-top: 30px;
+  text-align: center; /* Başlık merkezde hizalanır */
+  width: 100%;
+}
+
+
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -80px;
+  margin-top: 55px;
+}
+
+.property-item {
+  text-align: center;
+  flex-basis: calc(100% / 7 - 35px);/* 100% / 6 öğe, yatayda 14px mesafe ekleyerek her öğenin genişliğini ayarlar */
+  height: 170px;
+  margin-right: 10px;/* Resimler arasındaki boşluk */
+  margin-bottom: 5px;/* Alt taraftaki boşluk */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;/* İçerikleri aralarına boşluk bırakarak hizaladım */
+}
+
+.property-title {
+  color: #1b1b1b;
+  font-size: 12px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.property-title:hover {
+  text-decoration: underline;
+}
+
+.property-image {
+  width: 122px;
+  height: 108.6px;
+  margin-bottom: 8px;
+}
+
